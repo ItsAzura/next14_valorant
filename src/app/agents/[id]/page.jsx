@@ -31,7 +31,7 @@ const DetailsAgent = (props) => {
       <Image src={agent.fullPortrait} width={600} height={600} />
       <div className={styles.details}>
         <h1>{agent.displayName}</h1>
-        <p>{agent.role.displayName}</p>
+        <p>{agent.role?.displayName}</p>
         <div>
           {agent.abilities.map((ability) => (
             <div key={ability.uuid} className={styles.ability}>

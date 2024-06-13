@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { getAgents } from '@/actions/agents';
 import Link from 'next/link';
 
-export default function Home() {
+export default function Agents() {
   const [agents, setAgents] = useState([]);
   const [loading, setLoading] = useState(true);
 
