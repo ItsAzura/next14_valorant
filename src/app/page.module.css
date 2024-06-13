@@ -41,9 +41,29 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
+  grid-template-columns: repeat(3, minmax(33.33%, auto));
   max-width: 100%;
   width: var(--max-width);
+}
+
+.grid a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  background: rgba(var(--card-rgb), 0);
+  border: 1px solid rgba(var(--card-border-rgb), 0);
+  transition: background 200ms, border 200ms;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: 0px 0px 4px #fff;
+}
+
+.grid a:hover {
+  background: rgba(var(--card-rgb), 0.1);
+  border: 1px solid rgba(var(--card-border-rgb), 0.15);
 }
 
 .card {
@@ -79,6 +99,12 @@
   align-items: center;
   position: relative;
   padding: 4rem 0;
+}
+
+.center h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0px 0px 6px #fff;
 }
 
 .center::before {
